@@ -1,4 +1,4 @@
-function [ vertices, VPs ] = ExtractFromImageRectVerticesAndVPs( image, blur_factor )
+function [ vertices, VPs ] = ExtractFromImageRectVerticesAndVPs( image, blur_factor, fig_index )
 % ExtractFromImageRectVerticesAndVPs this function given an image and a blur
 % factor is able to detect a rectangular shape, computes the four verteces
 % and the two vanishing points associated with 
@@ -14,6 +14,9 @@ function [ vertices, VPs ] = ExtractFromImageRectVerticesAndVPs( image, blur_fac
 
     height = size(image, 1);
     width = size(image, 2);
+    
+    % setting figure to correct index
+    figure(fig_index);
     
 % definition of the parameters for the gaussian kernel for the denoising
 % filter

@@ -18,7 +18,7 @@ for i=1:3
     frame = imread(['pics/',num2str(i) ,'.JPG']);
     bw_frame = single(rgb2gray(frame));
 
-    [corners, vps_tmp]= ExtractFromImageRectVerticesAndVPs(bw_frame, 0.03);
+    [corners, vps_tmp]= ExtractFromImageRectVerticesAndVPs(bw_frame, 0.03, i);
     if showCalibrationImages == 1
         figure(i), imshow(frame,[]); hold on;
         

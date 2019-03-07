@@ -1,11 +1,5 @@
-# IACV Project
+## TODO:
+ - Distinguish vanishing points from intersections
 
-## Issues
- - In CameraCalibration.m:
-    - Principal point is offset with respect to the centre of the images;
-      unless the images are cropped or the sensor was not centered W.R.T.
-      the focal point, this is a hint that the calibration matrix is not
-      accurate.
-    - The 3D reconstruction of the table is not a rectangle.
- - In FindPen.m:
-    - The recognized pen is not perpendicular to the plane of the table, as it is in the pictures, but almost lying on it.
+## Ideas
+ - One could use the fact that the three photos are projections of the same rectangles, so that the preimages of the quadrilaterals have the same aspect ratios, and so the angles between the sides and the diagonals were the same.

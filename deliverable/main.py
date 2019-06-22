@@ -20,10 +20,11 @@ if (len(sys.argv) != 4):
     print("Usage: python3 main.py path/to/calibration/pics path/to/pic/without/marker path/to/pic/with/marker")
     exit(1)
 
-debug = False
+debug = True
 
 if debug:
     from matplotlib import pyplot as plt
+    from mpl_toolkits.mplot3d import Axes3D
 
 dirname = sys.argv[1].rstrip("/")
 nomarkerpicname = sys.argv[2]
@@ -33,6 +34,9 @@ vpxs = []
 vpys = []
 normf = 1000
 table_area = 0.06237
+# old
+# hues = np.array([68, 26, 340])/360.0
+# new
 hues = np.array([0.2055555556, 0.08611111111, 0.8888888889])
 # The first marker is the furthest from the tip
 rel_pos = [(17.7+16.3)/2, (10+8.8)/2, (3+1.2)/2]
@@ -60,8 +64,6 @@ else:
             plt.plot(*A[:2], 'bo', *B[:2], 'bo', *C[:2], 'bo')
         vpxs += [ norm_coordinates(hom2eucl(vpx), normf) ]
         vpys += [ norm_coordinates(hom2eucl(vpy), normf) ]
-    if debug:
-        plt.show()
     uv_princ, f = calculate_intrinsics(vpxs, vpys)
     with open(f"{dirname}/outs.csv", "w") as outf:
         outf.write(",".join([str(x) for x in uv_princ])+"\n")
@@ -75,8 +77,24 @@ table_plane = np.append(Rt[:,2], -np.dot(Rt[:,2], Rt[:,3]))
 markerpic = skimage.io.imread(markerpicname)
 uv_markers = norm_coordinates_multi(detect_markers(markerpic, hues), normf)
 
-mpos = find_marker_positions(uv_markers, uv_princ, f, rel_pos)
+if debug:
+    plt.figure("markerpic")
+    plt.imshow(markerpic)
+    plt.plot(uv_markers[:,0]*normf, uv_markers[:,1]*normf, 'cx')
+
+mpos = find_marker_positions(uv_markers, uv_princ, f, rel_pos, np.linalg.norm(Rt[:, 3]))
 tip_direction = (mpos[2] - mpos[0])/np.linalg.norm(mpos[2] - mpos[0])
-tip_position = mpos[0] + tip_direction*rel_pos[0]
+tip_position = mpos[0] + tip_direction*rel_pos[0]/100
 print("Pen tip penetration: ", pen_tip_penetration(tip_position, table_plane))
 print("Angle between pen and table: ", angle_between_vector_plane(tip_direction, table_plane))
+
+if debug:
+    xhat, yhat, H = Rt[:, 0], Rt[:, 1], Rt[:,3]
+    l = 0.15
+    vertices = np.array([H + u * xhat + v * yhat for u, v in [(l, l), (l, -l), (-l, -l), (-l, l)]])
+    fig = plt.figure("3D reconstruction")
+    ax = fig.add_subplot(111, projection='3d')
+    ax.plot_trisurf(vertices[:, 0], vertices[:, 1], vertices[:, 2])
+    ax.plot(mpos[:, 0], mpos[:, 1], mpos[:, 2], 'm-')
+    ax.plot(*[[x] for x in tip_position], 'ro')
+    plt.show()

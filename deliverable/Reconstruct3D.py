@@ -41,7 +41,7 @@ def find_projection_matrix(uv_princ, f, vpx, vpy, uva, uvb, uvc, uvh, table_area
 # For numerical reasons, these positions must be given in centimeters.
 # At the moment, rel_pos must be a list of length 3.
 # noinspection PyTypeChecker
-def find_marker_positions(markers, uv_princ, f, rel_pos):
+def find_marker_positions(markers, uv_princ, f, rel_pos, lambda_h):
     q_i = [qnorm(*uvm, *uv_princ, f) for uvm in markers]
     q1, q2, q3 = q_i
     l1, l2, l3 = rel_pos
@@ -60,7 +60,7 @@ def find_marker_positions(markers, uv_princ, f, rel_pos):
         return [x1**2 - 2*k12*x1*x2 + x2**2 - d122,
                 x2**2 - 2*k23*x2*x3 + x3**2 - d232,
                 x3**2 - 2*k31*x3*x1 + x1**2 - d312]
-    lambda_i = optimize.fsolve(func, np.array([0, 0, 0]), xtol=1.49012e-12)/100
+    lambda_i = optimize.fsolve(func, np.array([lambda_h, lambda_h, lambda_h]), xtol=1.49012e-12)/100
     p_i = np.array([l*q for l, q in zip(lambda_i, q_i)])
     return p_i
 

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bca2b51f-3e2a-4a55-afd2-a4eae642d635" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Compute Rt from VPs and intrinsics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Compute Rt from VPs and intrinsics.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reconstruct3D.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reconstruct3D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="398">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -27,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Reconstruct3D.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="384">
+              <caret line="62" column="75" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="75" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -59,6 +61,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="1146" selection-start-line="1146" selection-end-line="1146" />
             </state>
           </provider>
         </entry>
@@ -122,6 +133,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -137,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.new pics">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverable" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,7 +171,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="new pics" type="PythonConfigurationType" factoryName="Python">
       <module name="deliverable" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,7 +184,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="pics pics/IMG_20190621_092403934.jpg markerpics/IMG_20190621_092501626.jpg" />
+      <option name="PARAMETERS" value="pics pics/IMG_20190621_092403934.jpg markerpics/IMG_20190621_092447400.jpg" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -180,6 +192,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="old pics" type="PythonConfigurationType" factoryName="Python">
+      <module name="deliverable" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="pics3/Markers/ pics3/Markers/IMG_20190604_210132054.jpg pics3/Markers/IMG_20190604_210132054.jpg" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.new pics" />
+      <item itemvalue="Python.old pics" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -195,22 +232,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27323273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3280507" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3260274" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32772276" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45544556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32970297" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32929516" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32929516" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32871288" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -221,8 +258,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="10" />
+          <line>96</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -340,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17190">
-          <caret line="1146" selection-start-line="1146" selection-end-line="1146" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -361,13 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MarkerDetection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -377,18 +400,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Reconstruct3D.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="384">
+          <caret line="62" column="75" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="75" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1146" selection-start-line="1146" selection-end-line="1146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="398">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

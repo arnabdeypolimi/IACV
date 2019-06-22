@@ -4,9 +4,9 @@ from skimage.measure import regionprops
 import skimage.feature
 from MinimumBoundingBox import MinimumBoundingBox
 
-def detect_markers(markerpic, hues, hue_threshold = 0.02,
-                                    sat_threshold = 0.5,
-                                    val_threshold = 0.6,
+def detect_markers(markerpic, hues, hue_threshold = 0.035,
+                                    sat_threshold = 0.4,
+                                    val_threshold = 0.5,
                                     closure_radius = 5):
     smoothpic = skimage.filters.gaussian(markerpic, sigma=3, multichannel=True)
     hsvmarker = skimage.color.rgb2hsv(smoothpic)

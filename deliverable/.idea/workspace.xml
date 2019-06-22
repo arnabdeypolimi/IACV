@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bca2b51f-3e2a-4a55-afd2-a4eae642d635" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Compute Rt from VPs and intrinsics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Compute Rt from VPs and intrinsics.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reconstruct3D.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reconstruct3D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarkerDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/MarkerDetection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="548">
+              <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MarkerDetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="390">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -51,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/IntrinsicsFromVPs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -92,9 +91,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/IntrinsicsFromVPs.py" />
-        <option value="$PROJECT_DIR$/MarkerDetection.py" />
         <option value="$PROJECT_DIR$/Reconstruct3D.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/MarkerDetection.py" />
       </list>
     </option>
   </component>
@@ -233,14 +232,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18114798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32772276" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45544556" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32772276" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45544556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -255,13 +255,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -387,14 +380,7 @@
     <entry file="file://$PROJECT_DIR$/IntrinsicsFromVPs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MarkerDetection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -422,10 +408,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MarkerDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="548">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

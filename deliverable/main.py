@@ -58,6 +58,8 @@ else:
             nomarker_res = np.array(vpd_res)
         vpx, vpy, A, B, C, D = vpd_res
         if debug:
+            plt.figure(f"{picname} table mask")
+            plt.imshow(tablemask)
             plt.figure(picname)
             plt.imshow(pic)
             plt.plot(*vpx[:2], 'rx', *vpy[:2], 'rx')
